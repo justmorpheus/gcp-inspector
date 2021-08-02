@@ -16,7 +16,7 @@ After creating a new project and enabling billing for it, open Cloud Shell and e
    - Run "gsutil config" to configure shell.
    - Run "gsutil ls" to check the command is successful. This will list all the google buckets for project.
    - Install python3 and pip for installting dependencies.
-   - GCP Bucket list with or without gs:// in the file.
+   - GCP Bucket listing with or without gs:// from the file via path as an argument.
 
 ## Installation
 ###Python3 virtual environment is required.
