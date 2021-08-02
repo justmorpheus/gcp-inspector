@@ -1,0 +1,6 @@
+gs://xyz-names
+gs://bucket-gcp-sample
+super-sample-bucket
+bucket-logs
+gs://sam-buck
+buck-bucket
