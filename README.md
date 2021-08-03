@@ -4,7 +4,7 @@
 
 **Tool to check publicly accessible GCP bucket.**
 
-##Blog
+## Blog
 - https://justm0rph3u5.medium.com/gcp-inspector-auditing-publicly-exposed-gcp-bucket-ac6cad55618c
 
 ## What it does
