@@ -13,7 +13,7 @@ After creating a new project and enabling billing for it, open Cloud Shell and e
 ### GCP account with project.
  - **Create a GCP account with project enabled**
    - Install [gsutil tool](https://cloud.google.com/storage/docs/gsutil) from the documentation.
-   - Run "gsutil config" to configure shell.
+   - Run "gsutil config" to configure shell. Else use “gcloud config set project [PROJECT_ID]” to set the project to any other project (external account for attacker's perspective) for checking publicly accessible bucket.
    - Run "gsutil ls" to check the command is successful. This will list all the google buckets for project.
    - Install python3 and pip for installting dependencies.
    - GCP Bucket listing with or without gs:// from the file via path as an argument.
@@ -21,11 +21,13 @@ After creating a new project and enabling billing for it, open Cloud Shell and e
 ## Installation
 ###Python3 virtual environment is required.
 ```
+python3 -m pip install gsutil
+gsutil config OR “gcloud config set project [PROJECT_ID]”
 git clone https://github.com/justmorpheus/GCP-Inspector
 cd GCP-Inspector
 mkdir gcp_inspect
-virtualenv -v env-tctf
-source env-tctf/bin/activate
+virtualenv -v gcp_inspect
+source gcp_inspect/bin/activate
 python3 -m pip install -r requirements.txt
 python3 gcp_inspector.py -r sample_file.txt
 ```
